@@ -1,0 +1,28 @@
+.wrapper {
+  background: rgba(22, 24, 35, 0.06);
+  border: 1.5px solid rgba(22, 24, 35, 0.06);
+  border-radius: 44px;
+  display: flex;
+  height: 44px;
+  overflow: hidden;
+
+  input {
+    background-color: transparent;
+    border: none;
+    display: block;
+    flex: 1 1;
+    font-size: 1.6rem;
+    outline: none;
+    padding: 12px 20px;
+  }
+
+  &:focus-within {
+    border-color: var(--button-color);
+    caret-color: var(--primary-color);
+  }
+
+  &.error {
+    border-color: var(--primary-color);
+    caret-color: var(--primary-color);
+  }
+}

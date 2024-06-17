@@ -1,0 +1,12 @@
+.wrapper {
+    width: 100%;
+    height: var(--defauft-layout-header-height);
+    border-bottom: 1px solid red;
+}
+
+.inner {
+    display: flex;
+    width: var(--defauft-layout-width);
+    align-items: center;
+    justify-content: space-between;
+}

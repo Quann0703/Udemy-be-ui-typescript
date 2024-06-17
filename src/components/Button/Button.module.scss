@@ -1,0 +1,11 @@
+.wrapper {
+    background-color: #fff;
+    border: 1px solid red;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+        background-color: var(--hover-color);
+    }
+}

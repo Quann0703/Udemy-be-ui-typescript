@@ -1,0 +1,128 @@
+.wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+  overflow: hidden; /* Ensure parent doesn't restrict child overflow */
+  position: relative;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow-y: auto; /* Allow vertical scrolling */
+  scroll-behavior: smooth;
+}
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  min-height: 100%; /* Allow container to take full height for scrolling */
+}
+.content {
+  --width: 640px;
+  background: #fff;
+  border-radius: 8px;
+  max-width: calc(100vw - 32px);
+  min-height: 600px;
+  padding: 48px 16px 60px;
+  position: relative;
+  width: var(--width);
+  overflow-y: auto; /* Enable scrolling inside content if needed */
+}
+.back-btn {
+  color: #404040;
+  font-size: 2rem;
+  left: 50px;
+  opacity: 0.5;
+  padding: 32px;
+  position: absolute;
+  top: 0;
+}
+.header {
+  overflow: hidden;
+  a {
+    display: flex;
+    justify-content: center;
+  }
+}
+.logo {
+  border-radius: 8px;
+  height: 40px;
+  object-fit: cover;
+  width: 110px;
+}
+.title {
+  color: #292929;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 12px 0;
+}
+.desc {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin: 0 auto;
+  width: min(400px, 90%);
+}
+.body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+.mainStep {
+  margin-top: 24px;
+}
+.dontHaveAcc {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  margin-bottom: 0;
+  padding: 24px 16px 0;
+  button {
+    color: var(--primary-color);
+    font-weight: 600;
+    background-color: transparent;
+  }
+}
+.acceptTerm {
+  bottom: 0;
+  color: #666;
+  font-size: 1.1rem;
+  left: 0;
+  line-height: 1.6;
+  padding: 12px 132px;
+  position: absolute;
+  right: 0;
+  a {
+    margin: 0 4px;
+  }
+}
+.formBody {
+  max-width: 100%;
+  width: 380px;
+}
+.btn-sign-in {
+  border-radius: 44px !important;
+  height: 44px;
+  color: var(--white-color);
+  margin-top: 20px;
+  width: 100%;
+  background-color: var(--button-color);
+  background-image: var(--button-image);
+  font-weight: 600;
+  transition: background-position 0.15s cubic-bezier(0.2, 0.2, 0.2, 1);
+}
+@media (min-width: 0px) and (max-width: 739px) {
+  .content {
+    min-height: 577px;
+  }
+  .acceptTerm {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px;
+    width: min(400px, 100%);
+  }
+}
